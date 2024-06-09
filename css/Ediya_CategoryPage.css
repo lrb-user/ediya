@@ -1,0 +1,504 @@
+@font-face {
+  font-family: "GowunDodum-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  font-family: "GowunDodum-Regular";
+  user-select: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.w_1200 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* background-color: brown; */
+}
+.flex_container {
+  display: flex;
+}
+
+.wrap {
+  width: 100%;
+  /* height: 5000px; */
+  min-width: 1200px;
+}
+
+/* 헤더 */
+.header {
+  /* background-color: pink; */
+  /* height: 130px; */
+  width: 100%;
+  position: fixed;
+  min-width: 1200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 999;
+  /* position: relative; */
+}
+.h_top {
+  height: 50px;
+  position: relative;
+  z-index: 999;
+  /* background-color: red; */
+
+  /* background: skyblue; */
+}
+.h_top li {
+  /* border: 1px solid; */
+  margin-right: 30px;
+}
+.h_top_L {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  font-weight: bold;
+  color: #848484;
+}
+.h_top_R {
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 13px;
+  font-weight: bold;
+  color: #848484;
+}
+.h_top_R select {
+  width: 150px;
+  height: 30px;
+  padding: 0 15px;
+  color: #848484;
+  outline: none;
+}
+.h_top_R select,
+.h_top_R .search_icon {
+  margin-left: 20px;
+}
+.search_icon {
+  /* border: 1px solid; */
+  width: 25px;
+  height: 30px;
+  background-image: url(../img/search.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+/* .search_icon_active {
+  width: 150px;
+  height: 25px;
+  border: 1px solid;
+  border-radius: 5px;
+} */
+.search_icon a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.search_icon img {
+  width: 50%;
+}
+.icon_text {
+  display: none;
+}
+.icon_css {
+  /* display: none; */
+  width: 150px;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  color: rgb(151, 151, 151);
+  /* font-weight: bold; */
+  /* border: none; */
+  /* border-radius: 9px; */
+  /* color: white; */
+
+  /* background-color: #eeeeee; */
+}
+.icon_css::placeholder {
+  font-size: 12px;
+  /* color: white; */
+  /* background-color: #243c84; */
+}
+.language_box {
+  width: 150px;
+  height: 35px;
+  /* line-height: 35px; */
+  border: 1px solid #ddd;
+  margin: 0 20px;
+  position: relative;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.language_L {
+  float: left;
+  font-size: 12px;
+  line-height: 35px;
+}
+.language_R {
+  float: right;
+  line-height: 35px;
+  cursor: pointer;
+}
+.language_hidden_box {
+  width: 100%;
+  /* height: 0; */
+  /* border: 1px solid; */
+  background-color: white;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-size: 12px;
+  display: none;
+}
+.h_bot_fixed {
+  width: 100%;
+  margin: 0 auto;
+}
+.h_bot {
+  width: 1200px;
+  min-width: 1200px;
+  margin: 0 auto;
+  height: 80px;
+  line-height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  /* background-color: red; */
+  /* background: sienna; */
+}
+
+.h_bot_ul {
+  /* width: calc(100% - 220px);
+  text-align: right; */
+  width: calc(100% - 355px);
+  height: 100%;
+  text-align: center;
+  /* padding: 20px 0; */
+}
+/* #small_menu {
+  display: none;
+}
+
+#large_menu:hover ~ #small_menu {
+  display: block;
+} */
+
+.logo {
+  width: 220px;
+  height: 25px;
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  background-image: url(../img/이디야포폴자료/top_logo1.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.logo a {
+  /* background: red; */
+  display: block;
+  text-indent: -999px;
+}
+.h_bot li,
+.h_bot_ul li {
+  /* padding: 0 50px; */
+  font-size: 17px;
+  color: #202023;
+  /* border: 1px solid;
+  background: skyblue; */
+}
+.h_bot_ul > li {
+  width: calc(100% / 5);
+}
+.nav {
+  background-color: white;
+  width: 100%;
+  height: 200px;
+  border-bottom: 2px solid #ddd;
+  display: none;
+  position: fixed;
+  top: 130px;
+  left: 0;
+  z-index: 9999;
+}
+.nav_menu_side {
+  width: 100%;
+  min-width: 1200px;
+  height: 100%;
+  justify-content: space-between;
+  /* background-color: skyblue; */
+  /* border: 5px solid red; */
+  /* box-sizing: border-box; */
+}
+.blank {
+  width: 250px;
+  height: 90%;
+  /* margin-bottom: 50px; */
+  /* border: 1px solid; */
+  background-image: url(../img/이디야포폴자료/nav\ 서브\ 이미지.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45%;
+  /* margin: 0 auto; */
+
+  /* background-color: skyblue; */
+}
+
+.nav_menu_large_li {
+  margin: 0 auto;
+  /* padding: 0 50px; */
+}
+.nav_menu_large_li li {
+  font-size: 13px;
+  padding-bottom: 10px;
+  /* line-height: 0; */
+  color: #848484;
+  font-weight: bold;
+}
+.nav_menu_large_li a:hover {
+  color: black;
+}
+.h_bot li:nth-child(5) {
+  padding-right: 0;
+}
+.menu_box {
+  padding-top: 130px;
+  width: 100%;
+  height: 850px;
+  background-image: url(../img/이디야포폴자료/메뉴\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+.menu_txt_box {
+  margin: 0;
+  padding: 100px 0;
+}
+.menu_txt_box p:nth-child(1) {
+  font-size: 80px;
+}
+.menu_txt_box p:nth-child(2) {
+  font-size: 30px;
+}
+.menu_txt_box p:nth-child(3) {
+  font-size: 20px;
+}
+.menu_txt_box ul {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 0;
+}
+.menu_txt_box li {
+  display: inline-block;
+  border: solid 1px #fff;
+  border-left: none;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px 100px;
+}
+.menu_txt_box li:nth-child(1) {
+  border-left: 1px solid #fff;
+}
+.menu_txt_box li:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.drink_box {
+  width: 100%;
+  height: 680px;
+  background-image: url(../img/이디야포폴자료/menu_intro_bg01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* color: white; */
+  /* text-align: center; */
+}
+.sec_drink {
+  background-color: red;
+}
+
+.txt_box_1 {
+  padding: 100px 200px;
+  text-align: left;
+  box-sizing: border-box;
+}
+.txt_box_2 {
+  padding: 100px 200px;
+  text-align: right;
+  box-sizing: border-box;
+}
+.ediya_big_txt {
+  font-size: 22px;
+  color: #202023;
+  margin: 20px 0;
+}
+.ediya_small_txt {
+  font-size: 17px;
+  color: #707070;
+}
+.edyia_txt_box {
+}
+.edyia_txt_box h1 {
+  margin: 0;
+  font-weight: lighter;
+}
+.edyia_txt_box a {
+  display: inline-block;
+  border: 1px solid #858383;
+  padding: 10px 50px;
+  margin: 50px 0;
+  border-radius: 8px;
+}
+.edyia_txt_box a:hover {
+  background-color: #063b72;
+  color: white;
+  font-weight: bold;
+  border-color: transparent;
+}
+
+.border_bot {
+  width: 80px;
+  margin: 30px 0;
+  /* margin: 0 auto; */
+  border-bottom: 2px solid black;
+}
+.boredr_inline {
+  display: inline-block;
+}
+
+.bakery_box {
+  width: 100%;
+  height: 680px;
+  background-image: url(../img/이디야포폴자료/menu_intro_bg02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* color: white; */
+  /* text-align: center; */
+}
+
+.coffee_box {
+  width: 100%;
+  height: 680px;
+  background-image: url(../img/이디야포폴자료/menu_intro_bg03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* color: white; */
+  /* text-align: center; */
+}
+
+.capsule_box {
+  width: 100%;
+  height: 680px;
+  background-image: url(../img/이디야포폴자료/menu_intro_bg04.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* color: white; */
+  /* text-align: center; */
+}
+
+.md_box {
+  width: 100%;
+  height: 680px;
+  background-image: url(../img/이디야포폴자료/menu_intro_bg05.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* color: white; */
+  /* text-align: center; */
+}
+
+.top_btn {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: fixed;
+  bottom: 50px;
+  right: 60px;
+  background-color: #243c84;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.top_btn:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+/* 푸터 */
+.footer {
+  width: 100%;
+  height: 250px;
+  background-color: #262626;
+  color: #818181;
+}
+.footer_top {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 13px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+.footer_top li {
+  padding: 0 40px;
+  display: inline-block;
+  /* border: 1px solid; */
+}
+.footer_top li a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.footer_bot {
+  width: 100%;
+  height: 150px;
+  /* position: relative; */
+  text-align: center;
+}
+.footer_logo {
+  width: 210px;
+  height: 20px;
+  margin: 30px auto;
+  /* border: 1px solid; */
+  background-image: url(../img/이디야포폴자료/footer_logo.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+.footer_bot_txt p {
+  margin: 0;
+  font-size: 12px;
+  color: #6c6c6c;
+  font-weight: 700;
+}
